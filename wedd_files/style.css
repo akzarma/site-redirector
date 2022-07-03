@@ -173,6 +173,7 @@ figure {
 .fh5co-cover {
   background-size: cover;
   position: relative;
+  background-position: top !important;
 }
 
 @media screen and (max-width: 768px) {
